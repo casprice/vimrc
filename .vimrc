@@ -10,6 +10,10 @@ set nocompatible " No compatibility necessary for mappings to work
 set noerrorbells " turn off error sounds
 set novisualbell " turn off error flash
 au FocusLost * :wa " Save upon losing focus
+" Fix autoindent not working
+filetype on
+filetype plugin on
+filetype indent on
 
 set number " Line numbers on the left side of the screen
 set ruler " Numbers at the bottom of the screen for column and line
