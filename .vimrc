@@ -11,7 +11,7 @@ set noerrorbells " turn off error sounds
 set novisualbell " turn off error flash
 au FocusLost * :wa " Save upon losing focus
 
-set number " Line numbers ont he left side of the screen
+set number " Line numbers on the left side of the screen
 set ruler " Numbers at the bottom of the screen for column and line
 
 
@@ -64,5 +64,5 @@ endif
  
  
 """" Key mappings
-imap {<CR> {<CR>}<Esc>O
-imap /*<CR> /*<CR>/<Esc>O
+inoremap {<CR> {<CR>}<Esc>O
+inoremap /*<CR> /*<CR>/<Esc>O
