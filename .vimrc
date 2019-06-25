@@ -1,6 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""
-" .vimrc
-" Reference: Godwin Pang - github @godwinpang
+" Personal .vimrc
+" Casey Price - github @casprice
+" Reference: Godwin Pang - github @godwinpang (ty)
 "
 """""""""""""""""""""""""""""""""""""""""""""
 
@@ -58,9 +59,10 @@ fun! CleanExtraSpaces()
 endfun
 
 if has("autocmd")
-     autocmd BufWritePre *.h,*.c,*.cpp,*.java,*.vimrc,*.txt,*.js,*.py,*.wiki,*.sh :       call CleanExtraSpaces()
+     autocmd BufWritePre *.h,*.c,*.cpp,*.java,*.vimrc,*.txt,*.js,*.py,*.wiki,*.sh :call CleanExtraSpaces()
 endif
  
  
 """" Key mappings
-inoremap {<CR> {<CR>}<Esc>O
+imap {<CR> {<CR>}<Esc>O
+imap /*<CR> /*<CR>/<Esc>O
